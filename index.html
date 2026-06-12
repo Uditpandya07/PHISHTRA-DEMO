@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Military-grade, 100% offline anti-phishing protection for Android and Chrome. Browse with absolute peace of mind knowing your data never leaves your device." />
+  <meta property="og:title" content="Phishtra | 100% Offline Anti-Phishing" />
+  <meta property="og:description"
+    content="Military-grade, zero-telemetry phishing protection. Browse with absolute peace of mind." />
+  <title>Phishtra | 100% Offline Anti-Phishing Protection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="dark-theme">
+  <div class="ambient-glow"></div>
+  <header class="site-header" data-elevated="false">
+    <a class="brand" href="#top" aria-label="Phishtra home">
+      <div class="brand-logo-container" style="width: 44px; height: 44px;">
+        <img src="branding/phishtra-android-icon.png" alt="Phishtra Logo" style="width: 44px; height: 44px; display: block;" />
+      </div>
+      <span style="font-size: 26px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;">Phishtra</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#workflow">Demo Flow</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#contact">Walkthrough</a>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section reveal-on-scroll">
+      <div class="hero-copy">
+        <p class="eyebrow">Military-Grade Cybersecurity</p>
+        <h1>Intercept Phishing Before It Happens. <br><span style="color: var(--teal);">100% Offline.</span></h1>
+        <p class="hero-line">Browse with absolute confidence. Total privacy, zero data collection.</p>
+        <p class="hero-text">Phishtra instantly detects and blocks malicious sites before they can steal your
+          credentials. Powered by an advanced on-device Rust heuristics engine, your browsing data
+          <strong>never</strong> leaves your device. Uncompromised security meets ultimate peace of mind.</p>
+
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="#workflow">See How It Protects You</a>
+          <a class="button secondary" href="#architecture">Explore the Privacy Architecture</a>
+        </div>
+
+        <div class="trust-badges"
+          style="margin-top: 24px; display: flex; gap: 16px; font-size: 13px; font-weight: 600; color: #a1a1aa; flex-wrap: wrap;">
+          <span><svg style="width:14px;height:14px;margin-bottom:-2px;margin-right:4px;color:var(--teal);"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg> 100% Local Processing</span>
+          <span><svg style="width:14px;height:14px;margin-bottom:-2px;margin-right:4px;color:var(--amber);"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg> Zero Latency</span>
+          <span><svg style="width:14px;height:14px;margin-bottom:-2px;margin-right:4px;color:var(--blue);"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg> Enterprise-Grade Engine</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Security dashboard mockup">
+        <div class="phone-frame glass-panel">
+          <div class="phone-notch"></div>
+          <div class="phone-card">
+            <span class="status-pill safe">Protected</span>
+            <h3>Mobile protection flow</h3>
+            <p>Local checks, warnings, and user-controlled overrides.</p>
+          </div>
+        </div>
+        <div class="browser-frame glass-panel">
+          <div class="browser-bar"><span></span><span></span><span></span>
+            <div>secure-review.example</div>
+          </div>
+          <div class="dashboard-grid">
+            <div class="risk-panel">
+              <span class="status-pill danger">Review required</span>
+              <h2>Suspicious destination blocked</h2>
+              <p>Risk signals were detected before navigation continued.</p>
+              <div class="score-ring" aria-label="Risk score 82 out of 100">82</div>
+            </div>
+            <div class="signal-list">
+              <div class="glass-card"><strong>Brand mismatch</strong><span>Login copy and host differ</span></div>
+              <div class="glass-card"><strong>Credential intent</strong><span>Form asks for sensitive data</span></div>
+              <div class="glass-card"><strong>User action</strong><span>Return to previous page or continue
+                  manually</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="section split-section reveal-on-scroll">
+      <div>
+        <p class="eyebrow">The Phishtra Advantage</p>
+        <h2>Invisible to hackers. Invulnerable protection for you.</h2>
+      </div>
+      <div class="copy-stack">
+        <p>Traditional anti-phishing tools send your private browsing history to the cloud. Phishtra is different.
+          It brings the power of an enterprise-grade analysis engine directly to your Android device and Chrome browser.
+          By evaluating behavioral signals and URL context <strong>100% offline</strong>, it offers unparalleled peace
+          of mind.</p>
+        <p>This public showcase demonstrates the seamless user experience, instantaneous blocking mechanics, and secure
+          architecture of the platform. (Proprietary detection algorithms and source code remain securely unreleased to
+          protect the integrity of the engine against threat actors).</p>
+      </div>
+    </section>
+
+    <section class="section reveal-on-scroll">
+      <div class="section-heading">
+        <p class="eyebrow">Feature Showcase</p>
+        <h2>Protection surfaces designed for real user decisions.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card glass-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg></span>
+          <h3>Android protection flow</h3>
+          <p>Extends anti-phishing guidance to mobile flows such as shared links, browsing, and app-level review.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg></span>
+          <h3>Real-time website risk analysis</h3>
+          <p>Evaluates URL and page-context signals before a risky destination becomes a user mistake.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg></span>
+          <h3>Android warning overlay</h3>
+          <p>Provides a clear interruption moment with risk reasons, destination context, and controlled next steps —
+            right on your phone.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg></span>
+          <h3>Extension popup dashboard</h3>
+          <p>Gives users a compact control center for checks, recent decisions, settings, and status.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg></span>
+          <h3>Risk explanations for users</h3>
+          <p>Translates technical signals into practical language without overexposing proprietary internals.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg></span>
+          <h3>Privacy-aware design</h3>
+          <p>Designed around local processing, data minimization, and careful boundaries for user trust.</p>
+        </article>
+        <article class="feature-card glass-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg></span>
+          <h3>Future-ready architecture</h3>
+          <p>Structured for product growth, store-readiness, compliance review, and planned reputation services.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="section workflow-section reveal-on-scroll">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Workflow</p>
+        <h2>From page context to user decision.</h2>
+      </div>
+      <div class="workflow-layout">
+        <div class="flowchart" role="list" aria-label="Anti-phishing workflow">
+          <button class="flow-node active glass-card" data-node="open" role="listitem">User opens website</button>
+          <button class="flow-node glass-card" data-node="observe" role="listitem">Extension observes page
+            context</button>
+          <button class="flow-node glass-card" data-node="signals" role="listitem">URL/page signals evaluated</button>
+          <button class="flow-node private-node glass-card" data-node="engine" role="listitem">Private Detection
+            Engine</button>
+          <button class="flow-node glass-card" data-node="verdict" role="listitem">Warning or safe status shown</button>
+          <button class="flow-node glass-card" data-node="decision" role="listitem">User decides action</button>
+        </div>
+        <aside class="explanation-panel glass-panel" aria-live="polite">
+          <span id="flow-kicker">Step 1</span>
+          <h3 id="flow-title">User opens website</h3>
+          <p id="flow-text">The workflow begins when a user navigates to a page, clicks a link, scans a URL, or opens
+            content that may need review.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="architecture" class="section reveal-on-scroll">
+      <div class="section-heading">
+        <p class="eyebrow">Architecture</p>
+        <h2>Complete ecosystem and platform-specific implementations.</h2>
+      </div>
+
+      <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--teal);">1. Global Ecosystem</h3>
+      <div class="glass-panel" style="padding: 24px; overflow-x: auto; margin-bottom: 40px;">
+        <pre class="mermaid" style="background: transparent; margin: 0; display: flex; justify-content: center;">
+graph TD
+    classDef mainNode fill:#3b82f6,stroke:#fff,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+    classDef webNode fill:#10b981,stroke:#6ee7b7,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+    classDef upcomingNode fill:#f59e0b,stroke:#fde68a,stroke-width:2px,color:#fff,rx:8px,ry:8px,stroke-dasharray:5;
+    classDef adminNode fill:#8b5cf6,stroke:#c4b5fd,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+
+    User["👤 End User"]:::mainNode
+    Admin["👑 System Admin"]:::adminNode
+    
+    subgraph Public Facing
+        Web["🌍 Company Website<br>(Marketing & Auth)"]:::webNode
+    end
+    
+    subgraph Client Applications
+        Ext["🌐 Chrome Extension"]:::mainNode
+        App["📱 Android App"]:::mainNode
+        Desk["💻 Desktop App<br>(Upcoming)"]:::upcomingNode
+    end
+    
+    subgraph Backend Services
+        Dash["📊 Admin Dashboard<br>(Fleet Management & Analytics)"]:::adminNode
+        API["⚙️ Threat Intelligence API"]:::adminNode
+    end
+
+    User --> Web
+    User --> Ext
+    User --> App
+    User -.-> Desk
+
+    Admin --> Dash
+    Dash --> API
+
+    Ext -->|Telemetry / Updates| API
+    App -->|Telemetry / Updates| API
+    Desk -.->|Telemetry / Updates| API
+          </pre>
+      </div>
+
+      <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--teal);">2. Android App Flow</h3>
+      <div class="glass-panel" style="padding: 24px; overflow-x: auto; margin-bottom: 40px;">
+        <pre class="mermaid" style="background: transparent; margin: 0; display: flex; justify-content: center;">
+graph LR
+    classDef appNode fill:#18181b,stroke:#3b82f6,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+    classDef coreNode fill:#ef4444,stroke:#fca5a5,stroke-width:2px,color:#fff,rx:12px,ry:12px;
+    
+    Link["User Opens Link<br>in any app"]:::appNode
+    A11y["Accessibility Service<br>URL Extraction"]:::appNode
+    JNI["Rust Engine (JNI)<br>Offline Heuristics"]:::coreNode
+    Alert["System Overlay /<br>Notification Alert"]:::appNode
+    AppUI["Main App UI<br>(Scan & Settings)"]:::appNode
+
+    Link --> A11y
+    A11y -->|Raw URL Context| JNI
+    JNI -->|Verdict: Phishing| Alert
+    Alert -->|User Override| Link
+    AppUI -.->|Configure| A11y
+          </pre>
+      </div>
+
+      <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--teal);">3. Chrome Extension Flow</h3>
+      <div class="glass-panel" style="padding: 24px; overflow-x: auto; margin-bottom: 40px;">
+        <pre class="mermaid" style="background: transparent; margin: 0; display: flex; justify-content: center;">
+graph LR
+    classDef extNode fill:#18181b,stroke:#14b8a6,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+    classDef coreNode fill:#ef4444,stroke:#fca5a5,stroke-width:2px,color:#fff,rx:12px,ry:12px;
+    
+    Nav["User Navigates<br>to URL"]:::extNode
+    Worker["Service Worker<br>(Background Intercept)"]:::extNode
+    DOM["Content Script<br>(DOM Analysis)"]:::extNode
+    WASM["Rust Engine (WASM)<br>Offline Heuristics"]:::coreNode
+    Popup["Extension Popup<br>(User Controls)"]:::extNode
+    Warning["🛑 Red Warning Page"]:::extNode
+
+    Nav --> Worker
+    Worker --> DOM
+    DOM -->|Raw Signals| WASM
+    Worker -->|URL Meta| WASM
+    WASM -->|Verdict: Safe| Nav
+    WASM -->|Verdict: Phishing| Warning
+    Popup -.->|Settings| Worker
+          </pre>
+      </div>
+
+      <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--amber);">4. Desktop App Flow (Upcoming)</h3>
+      <div class="glass-panel" style="padding: 24px; overflow-x: auto;">
+        <pre class="mermaid" style="background: transparent; margin: 0; display: flex; justify-content: center;">
+graph LR
+    classDef deskNode fill:#18181b,stroke:#f59e0b,stroke-width:2px,color:#fff,rx:8px,ry:8px,stroke-dasharray:5;
+    classDef coreNode fill:#ef4444,stroke:#fca5a5,stroke-width:2px,color:#fff,rx:12px,ry:12px;
+    
+    Req["System Network Req<br>(Browser/App)"]:::deskNode
+    Proxy["Local OS Proxy /<br>DNS Sinkhole"]:::deskNode
+    Native["Rust Engine (Native)<br>Offline Heuristics"]:::coreNode
+    Tray["System Tray UI<br>& Notifications"]:::deskNode
+    Block["Connection Blocked<br>(Localhost Page)"]:::deskNode
+
+    Req --> Proxy
+    Proxy -->|Packet / DNS| Native
+    Native -->|Verdict: Phishing| Block
+    Native -->|Alert| Tray
+    Tray -.->|Configure| Proxy
+          </pre>
+      </div>
+    </section>
+
+    <section id="screenshots" class="section reveal-on-scroll">
+      <div class="section-heading">
+        <p class="eyebrow">Screenshots</p>
+        <h2>Drop-in gallery for real product captures.</h2>
+        <p class="section-note">The layout uses the requested filenames. Placeholder frames are included where
+          emulator/browser capture could not be completed in this environment.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Screenshot platforms">
+        <button class="tab active" role="tab" aria-selected="true" data-tab="android">Android App</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="browser">Browser Extension</button>
+      </div>
+      <div class="gallery active" id="android-gallery">
+        <figure class="glass-card">
+          <div class="image-fallback">Android home</div>
+          <figcaption>Android home</figcaption>
+        </figure>
+        <figure class="glass-card">
+          <div class="image-fallback">Android warning</div>
+          <figcaption>Android warning</figcaption>
+        </figure>
+        <figure class="glass-card">
+          <div class="image-fallback">Android onboarding</div>
+          <figcaption>Android onboarding</figcaption>
+        </figure>
+        <figure class="glass-card">
+          <div class="image-fallback">Android settings</div>
+          <figcaption>Android settings</figcaption>
+        </figure>
+      </div>
+      <div class="gallery" id="browser-gallery">
+        <figure class="glass-card">
+          <div class="image-fallback">Popup dashboard</div>
+          <figcaption>Popup dashboard</figcaption>
+        </figure>
+        <figure class="glass-card">
+          <div class="image-fallback">Warning page</div>
+          <figcaption>Warning page</figcaption>
+        </figure>
+        <figure class="glass-card">
+          <div class="image-fallback">Onboarding</div>
+          <figcaption>Onboarding</figcaption>
+        </figure>
+        <figure class="glass-card">
+          <div class="image-fallback">Settings</div>
+          <figcaption>Settings</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section trust-section reveal-on-scroll">
+      <div>
+        <p class="eyebrow">Privacy and Trust</p>
+        <h2>Clear boundaries are part of the product.</h2>
+      </div>
+      <div class="accordion">
+        <button class="accordion-trigger glass-panel" aria-expanded="true">Why is the source code private?</button>
+        <div class="accordion-panel">
+          <p>The implementation is private because the product may be commercially released. This showcase intentionally
+            avoids private source code, detection internals, secret rules, datasets, API keys, and internal service
+            details.</p>
+        </div>
+        <button class="accordion-trigger glass-panel" aria-expanded="false">How are security claims handled?</button>
+        <div class="accordion-panel" hidden>
+          <p>Claims are conservative. The product is designed to reduce phishing risk and improve user decision-making,
+            not to promise perfect protection.</p>
+        </div>
+        <button class="accordion-trigger glass-panel" aria-expanded="false">What matters for user trust?</button>
+        <div class="accordion-panel" hidden>
+          <p>User-facing warnings should be explainable, reversible where appropriate, respectful of false positives,
+            and transparent about what is and is not being inspected.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section depth-section reveal-on-scroll">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Depth</p>
+        <h2>Evidence of serious product engineering.</h2>
+      </div>
+      <div class="depth-grid">
+        <div class="glass-card">
+          <h3>Android companion</h3>
+          <p>Mobile-first security flows with app screens for scanning, warnings, settings, and onboarding.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Browser extension architecture</h3>
+          <p>Popup, content scripts, warning experience, local state, and page-context mediation.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Risk scoring pipeline</h3>
+          <p>Private signal evaluation layer designed to convert technical observations into actionable verdicts.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Warning UX</h3>
+          <p>Decision-focused copy, visual severity, reason summaries, and user override considerations.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Modular design</h3>
+          <p>Separate product surfaces and shared concepts allow safer iteration and platform-specific delivery.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Privacy-first thinking</h3>
+          <p>Public materials emphasize data minimization and avoid disclosing proprietary implementation details.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap-section reveal-on-scroll">
+      <div class="section-heading">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Path to public launch readiness.</h2>
+      </div>
+      <ol class="roadmap">
+        <li class="glass-card"><span>01</span>Play Store preparation</li>
+        <li class="glass-card"><span>02</span>Chrome Web Store preparation</li>
+        <li class="glass-card"><span>03</span>Improved detection coverage</li>
+        <li class="glass-card"><span>04</span>Better reporting workflow</li>
+        <li class="glass-card"><span>05</span>Privacy policy and compliance review</li>
+        <li class="glass-card"><span>06</span>Public launch readiness</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section reveal-on-scroll">
+      <div class="contact-container glass-panel">
+        <div class="contact-content">
+          <p class="eyebrow">Let's Connect</p>
+          <h2>Interested in the technical details?</h2>
+          <p>While the core detection source code remains private for commercial reasons, I'm available for technical
+            walkthroughs, system design interviews, and live demos of the rust-based heuristics engine.</p>
+          <div class="contact-links">
+            <a href="mailto:uditpandya77@gmail.com" class="button primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" style="width:18px;height:18px;margin-right:8px;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              uditpandya77@gmail.com
+            </a>
+            <a href="https://uditpandya.vercel.app/" target="_blank" class="button ghost"
+              style="border: 1px solid var(--line);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" style="width:18px;height:18px;margin-right:8px;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+              View Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand" style="margin-bottom: 16px;">
+          <div class="brand-logo-container" style="width: 44px; height: 44px;">
+            <img src="branding/phishtra-android-icon.png" alt="Phishtra Logo" style="width: 44px; height: 44px; display: block;" />
+          </div>
+          <span style="font-size: 28px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; font-family: 'Outfit';">Phishtra</span>
+        </div>
+        <p style="margin: 0; max-width: 300px;">An offline-first, privacy-respecting anti-phishing suite developed by
+          Udit Pandya.</p>
+      </div>
+      <div class="footer-platforms">
+        <h4 style="margin-top: 0; margin-bottom: 20px; font-family: 'Outfit'; font-size: 18px; color: #fff;">Supported
+          Platforms</h4>
+        <div class="platform-icons">
+          <div class="platform-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+            <span>Android App</span>
+          </div>
+          <div class="platform-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="21.17" y1="8" x2="12" y2="8"></line>
+              <line x1="3.95" y1="6.06" x2="8.54" y2="14"></line>
+              <line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>
+            </svg>
+            <span>Chrome Ext</span>
+          </div>
+          <div class="platform-badge upcoming">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>Desktop (Soon)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Udit Pandya. Source code intentionally private for commercial protection.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', fontFamily: 'Outfit, sans-serif' });
+  </script>
+</body>
+
+</html>
