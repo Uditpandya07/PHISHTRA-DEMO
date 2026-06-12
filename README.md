@@ -1,16 +1,18 @@
 <div align="center">
 
-<!-- ═══════════════════════ HEADER BANNER ═══════════════════════ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050C1A,40:0D1B3E,100:0A3060&height=220&section=header&text=🛡️%20PHISHTRA&fontSize=68&fontColor=FFFFFF&fontAlignY=40&desc=Next-Generation%20%7C%20Offline-First%20%7C%20Anti-Phishing%20Protection&descSize=16&descAlignY=64&descColor=7EC8E3&animation=twinkling" width="100%" />
-
+<!-- HEADER BANNER -->
 <br />
+<img src="branding/phishtra-android-icon.png" alt="Phishtra Logo" width="160" />
 
-<img src="branding/phishtra-logo-full.png" alt="Phishtra" width="210" />
-
-<br /><br />
+<h1>🛡️ PHISHTRA</h1>
 
 <!-- ANIMATED TYPING TAGLINE -->
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=1400&color=00D9FF&center=true&vCenter=true&width=600&lines=100%25+Offline+Threat+Detection;Block+Threats+Before+They+Load;Zero+Telemetry+%E2%80%94+Zero+Compromise;WebAssembly-Powered+Real-Time+Engine" alt="Typing SVG" />
+
+<br /><br />
+
+<!-- HIGH UI BUTTON FOR LIVE DEMO -->
+[![LIVE DEMO](https://img.shields.io/badge/🌐%20%20VIEW%20LIVE%20DEMO%20SHOWCASE-Click%20Here-0066FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://Uditpandya07.github.io/PHISHTRA-DEMO/)
 
 <br /><br />
 
