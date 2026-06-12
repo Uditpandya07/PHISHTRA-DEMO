@@ -1,18 +1,23 @@
 <div align="center">
 
-<!-- HEADER BANNER -->
+<!-- ═══════════════ HEADER BANNER — custom SVG (icon embedded) ══════════════ -->
+<img src="branding/header-banner.svg" width="100%" alt="Phishtra — Next-Generation Anti-Phishing Protection" />
+
 <br />
-<img src="branding/phishtra-android-icon.png" alt="Phishtra Logo" width="160" />
 
-<h1>🛡️ PHISHTRA</h1>
-
-<!-- ANIMATED TYPING TAGLINE -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=1400&color=00D9FF&center=true&vCenter=true&width=600&lines=100%25+Offline+Threat+Detection;Block+Threats+Before+They+Load;Zero+Telemetry+%E2%80%94+Zero+Compromise;WebAssembly-Powered+Real-Time+Engine" alt="Typing SVG" />
+<!-- HIGH UI LIVE DEMO BUTTON -->
+<a href="https://Uditpandya07.github.io/PHISHTRA-DEMO/">
+  <img src="https://img.shields.io/badge/-%20%F0%9F%8C%90%20%20LAUNCH%20LIVE%20DEMO%20%E2%86%97%20-0052CC?style=for-the-badge&logoColor=white" height="42" alt="Launch Live Demo" />
+</a>
+&nbsp;
+<a href="https://Uditpandya07.github.io/PHISHTRA-DEMO/">
+  <img src="https://img.shields.io/badge/Interactive%20Showcase-View%20UI%20%2F%20UX%20%E2%86%92-1A237E?style=for-the-badge&logo=googlechrome&logoColor=white" height="42" alt="Interactive Showcase" />
+</a>
 
 <br /><br />
 
-<!-- HIGH UI BUTTON FOR LIVE DEMO -->
-[![LIVE DEMO](https://img.shields.io/badge/🌐%20%20VIEW%20LIVE%20DEMO%20SHOWCASE-Click%20Here-0066FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://Uditpandya07.github.io/PHISHTRA-DEMO/)
+<!-- ANIMATED TYPING TAGLINE -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=1400&color=00D9FF&center=true&vCenter=true&width=600&lines=100%25+Offline+Threat+Detection;Block+Threats+Before+They+Load;Zero+Telemetry+%E2%80%94+Zero+Compromise;WebAssembly-Powered+Real-Time+Engine" alt="Typing SVG" />
 
 <br /><br />
 
