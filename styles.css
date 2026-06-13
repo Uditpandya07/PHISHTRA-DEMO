@@ -271,6 +271,7 @@ p {
   display: flex;
   gap: 16px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .button {
@@ -456,6 +457,23 @@ p {
   background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 16px;
+}
+
+.section-heading {
+  margin-bottom: 48px;
+}
+.copy-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.depth-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.depth-grid .glass-card {
+  padding: 32px;
 }
 
 /* Feature Grid */
@@ -795,6 +813,7 @@ p {
 
 @media (max-width: 980px) {
   .hero, .split-section, .workflow-layout, .footer-grid { grid-template-columns: 1fr; }
+  .hero-visual { flex-direction: column; align-items: center; }
   .dashboard-grid { padding: 20px; }
   .architecture-map { grid-template-columns: 1fr 1fr; }
   .browser-frame { position: relative; top: 0; right: 0; width: 100%; }
